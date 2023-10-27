@@ -1,0 +1,19 @@
+{
+  "name": "dicoding",
+  "version": "1.0.0",
+  "description": "Learning purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "event",
+    "api"
+  ],
+  "author": "RageNeko26",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2"
+  }
+}
