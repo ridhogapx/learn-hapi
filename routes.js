@@ -17,7 +17,7 @@ const routes = [
         method: 'GET',
         path: '/greet/{name?}',
         handler: (req, h) => {
-            const { name } = req.params
+            const { name = "Orang asing" } = req.params
             return `Selamat malam, ${ name }`
         }
     },
