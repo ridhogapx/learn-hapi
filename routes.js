@@ -14,6 +14,14 @@ const routes = [
         },
     },
     {
+        method: 'POST',
+        path: '/me',
+        handler: (req, h) => {
+            const { username, password } = req.payload
+            return `Welcome, ${username}`
+        }
+    },
+    {
         method: 'GET',
         path: '/greet/{name?}',
         handler: (req, h) => {
@@ -26,8 +34,8 @@ const routes = [
         path: '/{any*}',
         handler: (req, h) => {
             return "Halaman tidak ditemukan"
-        }
-    }
+        },
+    },
 ]
 
 module.exports = routes;
